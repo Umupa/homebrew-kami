@@ -1,8 +1,11 @@
 cask "kami" do
-  version "0.1.0"
-  sha256 "94b3cb1dcfe186ea4e77f62dc3416ae83da440aa9e8eb8f6e4f852d300b1448e"
+  arch arm: "arm64", intel: "amd64"
 
-  url "https://github.com/Umupa/Kami/releases/download/v#{version}/Kami.#{version}.arm64.dmg"
+  version "0.1.1"
+  sha256 arm:   "316a5de9e6eb1a1cd7605a259dcbc1bea7d577b2b434cbbd3c89bacabeb8afda",
+         intel: "618be738cf8676d0022418d7c3444ba7a937955a4182701fca74417496ef3143"
+
+  url "https://github.com/Umupa/Kami/releases/download/v#{version}/Kami.#{version}.#{arch}.dmg"
   name "Kami"
   desc "常驻菜单栏的桌面 AI 工具箱"
   homepage "https://github.com/Umupa/Kami"
@@ -13,7 +16,6 @@ cask "kami" do
   end
 
   auto_updates true
-  depends_on arch: :arm64
   depends_on macos: :sequoia
 
   app "Kami.app"
