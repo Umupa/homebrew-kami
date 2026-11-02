@@ -1,9 +1,9 @@
 cask "kami" do
   arch arm: "arm64", intel: "amd64"
 
-  version "0.1.5"
-  sha256 arm:   "7a056e2ecc925d50f32e0f4682c1b695103690dd34c58a04046b7ae749547993",
-         intel: "0c4fff955738a90915aeb75b7394732b29044f2cd441f4274098e954524264a8"
+  version "0.2.0"
+  sha256 arm:   "a9cc05d006d6c237363fc5fdaba0dc1e68c84817dd7fc32a659ba88c7623c0e8",
+         intel: "37c9fabecfede2108044a103e6df8a55e887d305f82c541dd4e627de7062149c"
 
   url "https://github.com/Umupa/Kami/releases/download/v#{version}/Kami.#{version}.#{arch}.dmg"
   name "Kami"
